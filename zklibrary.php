@@ -527,10 +527,10 @@ class ZKLibrary {
 		$command_string = '~SSR='.$ssr;
 		return $this->execCommand($command, $command_string);
 	}
-	public function getPinWidth()
+	public function getPinWidth($net = true)
 	{
 		$command = CMD_GET_PINWIDTH;
-		$command = CMD_OPTIONS_PRQ;
+//		$command = CMD_OPTIONS_PRQ;
 		$command_string = '~PIN2Width';
 		$return = $this->execCommand($command, $command_string);
 		if($net)

@@ -1,6 +1,5 @@
 <?php
-include "zklibrary.php";
-$zk = new ZKLibrary('192.168.1.102', 4370);
+$zk = new ZKLib('124.41.240.191', 4370);
 $zk->connect();
 $zk->disableDevice();
 
